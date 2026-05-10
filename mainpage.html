@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Family Feud</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      min-height:100vh;
+      background:#0f172a;
+      color:white;
+      padding:40px;
+    }
+
+    /* TITLE */
+
+    .title{
+      text-align:center;
+      font-size:72px;
+      font-weight:bold;
+      color:#f59e0b;
+      margin-bottom:50px;
+      text-shadow:0 0 20px rgba(245,158,11,0.6);
+      letter-spacing:3px;
+    }
+
+    /* MAIN GRID */
+
+    .main-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:40px;
+    }
+
+    /* SECTION */
+
+    .section{
+      background:#1e293b;
+      border:3px solid #334155;
+      border-radius:25px;
+      padding:30px;
+      box-shadow:0 0 20px rgba(0,0,0,0.3);
+    }
+
+    .section-title{
+      font-size:36px;
+      margin-bottom:25px;
+      color:#fbbf24;
+      text-align:center;
+      font-weight:bold;
+    }
+
+    /* CARDS */
+
+    .cards{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:20px;
+    }
+
+    .card{
+      background:#0f172a;
+      border:2px solid #475569;
+      border-radius:18px;
+      height:120px;
+
+      display:flex;
+      align-items:center;
+      justify-content:center;
+
+      text-decoration:none;
+      color:white;
+
+      font-size:24px;
+      font-weight:bold;
+
+      transition:0.25s;
+      cursor:pointer;
+    }
+
+    .card:hover{
+      transform:translateY(-5px) scale(1.03);
+      border-color:#f59e0b;
+      background:#1e293b;
+      box-shadow:0 0 20px rgba(245,158,11,0.4);
+    }
+
+    .catalog-cards{
+      grid-template-columns:repeat(2, 180px);
+      justify-content:center;
+    }
+    /* MOBILE */
+
+    @media(max-width:900px){
+
+      .main-grid{
+        grid-template-columns:1fr;
+      }
+
+      .title{
+        font-size:48px;
+      }
+
+      .cards{
+        grid-template-columns:1fr;
+      }
+
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- TITLE -->
+
+  <div class="title">
+    FAMILY FEUD
+  </div>
+
+  <!-- MAIN -->
+
+  <div class="main-grid">
+
+    <!-- CATEGORIES -->
+
+    <div class="section">
+
+      <div class="section-title">
+        Categories
+      </div>
+
+      <div class="cards">
+
+        <a href="" class="card">
+          Movies
+        </a>
+
+        <a href="" class="card">
+          Games
+        </a>
+
+        <a href="" class="card">
+          Anime
+        </a>
+
+        <a href="" class="card">
+          Memes
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- CATALOG -->
+
+    <div class="section">
+
+      <div class="section-title">
+        Catalog
+      </div>
+
+      <div class="cards catalog-cards">
+
+        <a href="catalog/q1/main.html" class="card">
+          q1
+        </a>
+
+        <a href="catalog/q2/main.html" class="card">
+          q2
+        </a>
+
+        <a href="" class="card">
+          q3
+        </a>
+
+        <a href="" class="card">
+          q4
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
