@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Family Feud</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/0/0d/Logo-of-Family-Feud-Philippines.png" type="image/png">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar" id="sidebar"></div>
+
+  <!-- MAIN -->
+  <div class="main">
+
+    <!-- TOP BAR -->
+    <div class="top-bar">
+      <div class="team-box team-a active-team" id="teamABox">
+        <div class="team-title">TEAM A</div>
+        <div class="team-score" id="teamAScore">0</div>
+      </div>
+      
+    <!-- QUESTION -->
+      <div class="question-box" id="questionBox">
+        Loading...
+      </div>
+
+      <div class="team-box team-b" id="teamBBox">
+        <div class="team-title">TEAM B</div>
+        <div class="team-score" id="teamBScore">0</div>
+      </div>
+    </div>
+
+    <!-- ANSWERS -->
+    <div class="answers-grid" id="answersGrid"></div>
+
+  </div>
+
+</div>
+
+<script src="main.js"></script>
+<script src="questions.json"></script>
+</body>
+</html>
